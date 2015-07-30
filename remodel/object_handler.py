@@ -92,3 +92,12 @@ class ObjectSet(object):
     def _fetch_results(self):
         if self.result_cache is None:
             self.result_cache = list(self.iterator())
+            
+    def skip(self, n)
+        self.query = self.query.skip(n)
+        return self
+        
+    def limit(self, n)
+        self.query = self.query.limit(n)
+        return self
+    
